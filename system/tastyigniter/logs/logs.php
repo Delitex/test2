@@ -5709,3 +5709,41 @@ ERROR - 2017-06-20 05:53:27 --> Severity: error --> Exception: Unable to locate 
 ERROR - 2017-06-20 05:53:32 --> Severity: error --> Exception: Unable to locate the model you have specified: Country C:\xampp\htdocs\test2\system\core\Loader.php 313
 ERROR - 2017-06-20 05:55:47 --> Severity: Error --> Call to a member function addressFormat() on null C:\xampp\htdocs\test2\admin\controllers\Orders.php 624
 ERROR - 2017-06-20 06:12:09 --> 404 Page Not Found: 
+ERROR - 2017-06-30 04:00:43 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:00:43 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 04:00:43 --> 404 Page Not Found: 
+ERROR - 2017-06-30 04:00:43 --> 404 Page Not Found: 
+ERROR - 2017-06-30 04:00:57 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:00:57 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 04:00:58 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:00:58 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 04:00:59 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:00:59 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 04:01:17 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:01:17 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 04:01:56 --> Query error: Unknown column 'status_priority' in 'where clause' - Invalid query: SELECT *
+FROM `fulbl8pa6_statuses`
+WHERE `status_priority` IN('1', '2', '3')
+AND `status_for` = 'order'
+ORDER BY `status_priority` ASC
+ERROR - 2017-06-30 04:01:56 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
