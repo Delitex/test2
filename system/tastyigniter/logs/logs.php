@@ -5747,3 +5747,10 @@ WHERE `status_priority` IN('1', '2', '3')
 AND `status_for` = 'order'
 ORDER BY `status_priority` ASC
 ERROR - 2017-06-30 04:01:56 --> Severity: Error --> Call to a member function num_rows() on boolean C:\xampp\htdocs\test2\system\tastyigniter\models\Statuses_model.php 92
+ERROR - 2017-06-30 10:48:27 --> 404 Page Not Found: 
+ERROR - 2017-06-30 10:49:27 --> 404 Page Not Found: 
+ERROR - 2017-06-30 10:51:28 --> 404 Page Not Found: 
+ERROR - 2017-06-30 10:53:29 --> 404 Page Not Found: 
+ERROR - 2017-06-30 10:55:30 --> 404 Page Not Found: 
+ERROR - 2017-06-30 10:57:31 --> 404 Page Not Found: 
+ERROR - 2017-06-30 11:20:51 --> 404 Page Not Found: 

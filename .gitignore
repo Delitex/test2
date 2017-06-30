@@ -1,4 +1,8 @@
 
-system/tastyigniter/logs
+admin/cache
+system/tastyigniter/session/
+system/tastyigniter/logs/
 system/tastyigniter/session/*
-admin/cache/*
+system/tastyigniter/logs/*
+system/tastyigniter/session
+system/tastyigniter/logs
