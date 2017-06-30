@@ -325,11 +325,12 @@ function changeStatus(){
 	var status_id = e.options[e.selectedIndex].value;
 	var order_id = document.getElementsByName("order_id").value;
 
-	$.ajax({
+	jQuery.ajax({
 		url: changeStatus_url,
 		data: { 'order_id' : order_id, 'status_id' : status_id },
 		type: 'POST',
 		success: function(data) {
+			if(data)
 			location.reload();
 		}
 	})
@@ -342,7 +343,7 @@ function changeStatus2(order_id=''){
 		var e = document.getElementById(order_id);
 		var status_id = e.options[e.selectedIndex].value;
 
-		$.ajax({
+		jQuery.ajax({
 			url: changeStatus_url,
 			data: { 'order_id' : order_id, 'status_id' : status_id },
 			type: 'POST',
@@ -384,7 +385,7 @@ $('#order_modal').on('hidden.bs.modal', function () {
 	var dft = document.getElementById('modal_select').firstElementChild.innerHTML;
 	spn.innerHTML = dft;
 
-})
+});
 
 
 var base_url = "<?php echo base_url(); ?>/orders/check_order";
@@ -412,7 +413,7 @@ $( "input[name='duration']" ).on('change', function(){
 			$( "input[name='duration']" ).val(duration);
 		}
 	});
-})
+});
 
 
 
@@ -441,6 +442,7 @@ function toggle_sound(){
 
 var data_parsed = '';
 var input_order_id = '';
+var input_order_id_val = '';
 var txt_tr = '';
 var tt = '';
 var count = 0;
@@ -470,7 +472,7 @@ function add_text_to_modal(){
 	input_order_id = document.getElementsByName("order_id");
 	if(data_parsed.orders && data_parsed.orders[i] && data_parsed.orders[i].order_id){
 		input_order_id.value = data_parsed.orders[i].order_id;
-		input_order_id = input_order_id.value;
+		input_order_id_val = input_order_id.value;
 	}
 
 	txt_tr = '';
@@ -502,7 +504,7 @@ function add_text_to_modal(){
 		orders_list = data_parsed.orders_list;
 
 			for(var k=0; k<orders_list.length; k++){
-				if(orders_list[k].order_id==input_order_id){
+				if(orders_list[k].order_id==input_order_id_val){
 
 					$("#modal_p1").html('<strong>Customer Name: </strong>'+orders_list[k].first_name+' '+orders_list[k].last_name);
 					$("#modal_p2").html('<strong>Phone Number: </strong>'+orders_list[k].telephone);
@@ -596,7 +598,7 @@ $("#modal-notify").on("click", function(){
 		data: { 'status' : status},
 		type: 'POST',
 	});
-})
+});
 
 </script>
 <?php echo get_footer(); ?>
