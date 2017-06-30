@@ -4,9 +4,9 @@
 		$modal_mute = $modal->mute;
 		$modal_duration = $modal->duration;
 	} ?>
-				<label class="control-label pull-right label_alarm">Set Alarm Time Interval</label>
+				<label class="control-label pull-right label_alarm">Set Alarm Time Interval :</label>
 				<input class="input_alarm" type="number" name="duration" min = 5 max = 100 value="<?php echo $modal_duration; ?>">
-				<label class="control-label pull-right label_notify">Notify Customer Popups</label>
+				<label class="control-label pull-right label_notify">Notify Customer Popups :</label>
 				<div class="pull-right">
 					<div class="div_notify">
 						<div id="modal-notify" class="btn-group btn-group-switch" data-toggle="buttons">
@@ -179,7 +179,7 @@
 			</form>
 
 			<audio id="order_notification">
-				<source src="<?php echo theme_url('tastyigniter-blue/audio'); ?>/expect-good-news.mp3" type="audio/mpeg">
+				<source src="<?php echo assets_url('audio'); ?>/expect-good-news.mp3" type="audio/mpeg">
 			</audio>
 
 			<div class="pagination-bar clearfix">
@@ -292,7 +292,7 @@
 	}
 	.input_alarm{
 		position: absolute;
-		right: 305px;
+		right: 308px;
 		top: 80px;
 		width: 49px;
 	}
@@ -317,7 +317,7 @@ function filterList() {
 	$('#filter-form').submit();
 }
 
-var changeStatus_url = "<?php echo base_url(); ?>/orders/changeStatus";
+var changeStatus_url = "<?php echo base_url(); ?>orders/changeStatus";
 
 function changeStatus(){
 
