@@ -4,11 +4,11 @@
 		$modal_mute = $modal->mute;
 		$modal_duration = $modal->duration;
 	} ?>
-				<label class="control-label pull-right" style="position: absolute; right: 365px; top: 80px;">Set Alarm Time Interval</label>
-				<input type="number" name="duration" min = 5 max = 100 style="position: absolute; right: 305px; top: 80px;" value="<?php echo $modal_duration; ?>">
-				<label class="control-label pull-right" style="position: absolute; right: 155px; top: 80px;">Notify Customer Popups</label>
+				<label class="control-label pull-right label_alarm">Set Alarm Time Interval</label>
+				<input class="input_alarm" type="number" name="duration" min = 5 max = 100 value="<?php echo $modal_duration; ?>">
+				<label class="control-label pull-right label_notify">Notify Customer Popups</label>
 				<div class="pull-right">
-					<div class="" style="width: 120px; position: absolute; right: 25px; top: 75px;">
+					<div class="div_notify">
 						<div id="modal-notify" class="btn-group btn-group-switch" data-toggle="buttons">
 							<?php if ($modal_status === '1') { ?>
                                 <label class="btn btn-danger">
@@ -284,6 +284,28 @@
 	#modal_p3 strong{
 		float: left;
 		margin-right: 20px !important;
+	}
+	.label_alarm{
+		position: absolute;
+		right: 365px;
+		top: 80px;
+	}
+	.input_alarm{
+		position: absolute;
+		right: 305px;
+		top: 80px;
+		width: 49px;
+	}
+	.label_notify{
+		position: absolute;
+		right: 155px;
+		top: 80px;
+	}
+	.div_notify{
+		width: 120px;
+		position: absolute;
+		right: 25px;
+		top: 75px;
 	}
 		
 </style>
