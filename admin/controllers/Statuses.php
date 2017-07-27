@@ -74,7 +74,8 @@ class Statuses extends Admin_Controller {
 				'status_name'		=> $result['status_name'],
 				'status_comment'	=> $result['status_comment'],
 				'status_priority'	=> $result['status_priority'],
-				'status_for'		=> ($result['status_for'] === 'reserve') ? 'Reservations' : ucwords($result['status_for']),
+				'status_for'		=> ucwords('order'),
+				// 'status_for'		=> ($result['status_for'] === 'reserve') ? 'Reservations' : ucwords($result['status_for']),
 				'notify_customer' 	=> ($result['notify_customer'] === '1') ? 'Yes' : 'No',
 				'edit' 				=> site_url('statuses/edit?id=' . $result['status_id'])
 			);

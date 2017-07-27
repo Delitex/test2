@@ -5754,3 +5754,8 @@ ERROR - 2017-06-30 10:53:29 --> 404 Page Not Found:
 ERROR - 2017-06-30 10:55:30 --> 404 Page Not Found: 
 ERROR - 2017-06-30 10:57:31 --> 404 Page Not Found: 
 ERROR - 2017-06-30 11:20:51 --> 404 Page Not Found: 
+ERROR - 2017-07-27 08:25:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\test2\extensions\cart_module\controllers\Cart_module.php 181
+ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\test2\extensions\cart_module\libraries\Cart_module_lib.php 191
+ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\test2\extensions\cart_module\libraries\Cart_module_lib.php 191
+ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\test2\extensions\cart_module\libraries\Cart_module_lib.php 191
+ERROR - 2017-07-27 08:25:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\test2\extensions\cart_module\controllers\Cart_module.php 181

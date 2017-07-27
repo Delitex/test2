@@ -17,7 +17,7 @@
 							<?php echo form_error('status_name', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="input-for" class="col-sm-3 control-label"><?php echo lang('label_for'); ?></label>
 						<div class="col-sm-5">
 							<select name="status_for" id="input-for" class="form-control">
@@ -34,7 +34,7 @@
 							</select>
 							<?php echo form_error('status_for', '<span class="text-danger">', '</span>'); ?>
 						</div>
-					</div>
+					</div> -->
                     <div class="form-group">
                         <label for="input-color" class="col-sm-3 control-label"><?php echo lang('label_color'); ?></label>
                         <div class="col-sm-5">
@@ -59,7 +59,7 @@
                             <?php echo form_error('status_priority', '<span class="text-danger">', '</span>'); ?>
                         </div>
                     </div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label class="col-sm-3 control-label"><?php echo lang('label_notify'); ?>
 							<span class="help-block"><?php echo lang('help_notify'); ?></span>
 						</label>
@@ -75,7 +75,7 @@
 							</div>
 							<?php echo form_error('notify_customer', '<span class="text-danger">', '</span>'); ?>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</form>

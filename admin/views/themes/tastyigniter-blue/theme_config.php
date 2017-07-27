@@ -14,12 +14,12 @@ $theme['version']       = '1.0';
 $theme['description']   = 'Responsive theme for admin panel';
 
 $theme['nav_menu'] = array(
-	'dashboard' => array(
-		'class' => 'dashboard admin',
-		'href' => site_url('dashboard'),
-		'icon' => 'fa-dashboard',
-		'title' => lang('menu_dashboard')
-	),
+	// 'dashboard' => array(
+	// 	'class' => 'dashboard admin',
+	// 	'href' => site_url('dashboard'),
+	// 	'icon' => 'fa-dashboard',
+	// 	'title' => lang('menu_dashboard')
+	// ),
 	'kitchen' => array(
 		'class' => 'kitchen',
 		'icon' => 'fa-cutlery',
@@ -39,7 +39,7 @@ $theme['nav_menu'] = array(
 		'permission' => 'Admin.Orders|Admin.Reservations|Admin.Coupons|Admin.Drivers',
 		'child' => array(
 			'orders' => array('class' => 'orders', 'href' => site_url('orders'), 'title' => lang('menu_order'), 'permission' => 'Admin.Orders'),
-			'reservations' => array('class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
+			// 'reservations' => array('class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
 			'coupons' => array('class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
 			'drivers' => array('class' => 'drivers', 'href' => site_url('drivers'), 'title' => lang('menu_driver'), 'permission' => 'Admin.Drivers'),
 		)
@@ -55,37 +55,37 @@ $theme['nav_menu'] = array(
 			'banners' => array('class' => 'banners', 'href' => site_url('banners'), 'title' => lang('menu_banner'), 'permission' => 'Admin.Banners'),
 		)
 	),
-	'restaurant' => array(
-		'class' => 'restaurant',
-		'icon' => 'fa-map-marker',
-		'title' => lang('menu_restaurant'),
-		'permission' => 'Admin.Locations|Admin.Tables',
-		'child' => array(
-			'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => lang('menu_location'), 'permission' => 'Admin.Locations'),
-			'tables' => array('class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
-		)
-	),
+	// 'restaurant' => array(
+	// 	'class' => 'restaurant',
+	// 	'icon' => 'fa-map-marker',
+	// 	'title' => lang('menu_restaurant'),
+	// 	'permission' => 'Admin.Locations|Admin.Tables',
+	// 	'child' => array(
+	// 		'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => lang('menu_location'), 'permission' => 'Admin.Locations'),
+	// 		'tables' => array('class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
+	// 	)
+	// ),
 	'users' => array(
 		'class' => 'users',
 		'icon' => 'fa-user',
 		'title' => lang('menu_user'),
 		'permission' => 'Admin.Customers|Admin.CustomerGroups|Admin.CustomersOnline|Admin.Staffs|Admin.StaffGroups',
 		'child' => array(
-			'customers' => array('class' => 'customers', 'href' => site_url('customers'), 'title' => lang('menu_customer'), 'permission' => 'Admin.Customers'),
-			'customer_groups' => array('class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
-			'customers_online' => array('class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'),
+			// 'customers' => array('class' => 'customers', 'href' => site_url('customers'), 'title' => lang('menu_customer'), 'permission' => 'Admin.Customers'),
+			// 'customer_groups' => array('class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
+			// 'customers_online' => array('class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'),
 			'staffs' => array('class' => 'staffs', 'href' => site_url('staffs'), 'title' => lang('menu_staff'), 'permission' => 'Admin.Staffs'),
 			'staff_groups' => array('class' => 'staff_groups', 'href' => site_url('staff_groups'), 'title' => lang('menu_staff_group'), 'permission' => 'Admin.StaffGroups'),
 			'activities' => array('class' => 'activities', 'href' => site_url('activities'), 'title' => lang('menu_activities'), 'permission' => 'Admin.Activities'),
 		)
 	),
-	'extensions' => array(
-		'class' => 'extensions',
-		'href' => site_url('extensions'),
-		'icon' => 'fa-puzzle-piece',
-		'title' => lang('menu_extension'),
-		'permission' => 'Admin.Extensions'
-	),
+	// 'extensions' => array(
+	// 	'class' => 'extensions',
+	// 	'href' => site_url('extensions'),
+	// 	'icon' => 'fa-puzzle-piece',
+	// 	'title' => lang('menu_extension'),
+	// 	'permission' => 'Admin.Extensions'
+	// ),
 	'design' => array(
 		'class' => 'design',
 		'icon' => 'fa-paint-brush',
@@ -95,7 +95,7 @@ $theme['nav_menu'] = array(
 			'pages' => array('class' => 'pages', 'href' => site_url('pages'), 'title' => lang('menu_page'), 'permission' => 'Site.Pages'),
 			'layouts' => array('class' => 'layouts', 'href' => site_url('layouts'), 'title' => lang('menu_layout'), 'permission' => 'Site.Layouts'),
 			'themes' => array('class' => 'themes', 'href' => site_url('themes'), 'title' => lang('menu_theme'), 'permission' => 'Site.Themes'),
-			'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
+			// 'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
 		)
 	),
 	'localisation' => array(
@@ -108,8 +108,8 @@ $theme['nav_menu'] = array(
 	        'currencies' => array('class' => 'currencies', 'href' => site_url('currencies'), 'title' => lang('menu_currency'), 'permission' => 'Site.Currencies'),
 	        'countries' => array('class' => 'countries', 'href' => site_url('countries'), 'title' => lang('menu_country'), 'permission' => 'Site.Countries'),
 	        'mealtimes' => array('class' => 'mealtimes', 'href' => site_url('mealtimes'), 'title' => lang('menu_mealtimes'), 'permission' => 'Admin.Mealtimes'),
-	        'security_questions' => array('class' => 'security_questions', 'href' => site_url('security_questions'), 'title' => lang('menu_security_question'), 'permission' => 'Admin.SecurityQuestions'),
-	        'ratings' => array('class' => 'ratings', 'href' => site_url('ratings'), 'title' => lang('menu_rating'), 'permission' => 'Admin.Ratings'),
+	        // 'security_questions' => array('class' => 'security_questions', 'href' => site_url('security_questions'), 'title' => lang('menu_security_question'), 'permission' => 'Admin.SecurityQuestions'),
+	        // 'ratings' => array('class' => 'ratings', 'href' => site_url('ratings'), 'title' => lang('menu_rating'), 'permission' => 'Admin.Ratings'),
 	        'statuses' => array('class' => 'statuses', 'href' => site_url('statuses'), 'title' => lang('menu_status'), 'permission' => 'Admin.Statuses'),
         )
 	),

@@ -8,10 +8,10 @@
 				<?php } ?>
 				<li class="<?php echo ($is_customizable) ?: 'active'; ?>">
 					<?php if (!empty($file)) { ?>
-						<a class="pull-left" href="#edit-source" data-toggle="tab"><?php echo lang('text_tab_edit_source'); ?></a>
+						<!-- <a class="pull-left" href="#edit-source" data-toggle="tab"><?php echo lang('text_tab_edit_source'); ?></a> -->
 						<a class="pull-right" href="<?php echo $close_file; ?>"><i class="fa fa-times-circle text-danger"></i></a>
 					<?php } else { ?>
-						<a href="#edit-source" data-toggle="tab"><?php echo lang('text_tab_edit_source'); ?></a>
+						<!-- <a href="#edit-source" data-toggle="tab"><?php echo lang('text_tab_edit_source'); ?></a> -->
 					<?php } ?>
 				</li>
 			</ul>
