@@ -9,7 +9,7 @@
 
 // Set a custom theme title.
 $theme['title']         = 'TastyIgniter Orange';
-$theme['author']        = 'SamPoyigi';
+$theme['author']        = 'OrderDime';
 $theme['version']       = '2.0';
 $theme['description']   = 'Responsive theme for front-end';
 $theme['child']       	= TRUE;

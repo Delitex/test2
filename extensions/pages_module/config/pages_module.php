@@ -22,7 +22,7 @@ $config['extension_meta'] = array(
 	'version'     => '1.1',
 	'type'        => 'module',
 	'title'       => 'Pages',
-	'author'      => 'SamPoyigi',
+	'author'      => 'OrderDime',
 	'description' => 'This extension will allow you to place a pages links module around your website.',
 	'settings'    => FALSE,
 );

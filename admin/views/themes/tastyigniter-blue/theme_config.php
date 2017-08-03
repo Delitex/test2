@@ -9,7 +9,8 @@
 
 // Set a custom theme title.
 $theme['title']         = 'TastyIgniter Admin Blue';
-$theme['author']        = 'SamPoyigi';
+$theme['author']        = 'OrderDime';
+
 $theme['version']       = '1.0';
 $theme['description']   = 'Responsive theme for admin panel';
 
@@ -20,18 +21,6 @@ $theme['nav_menu'] = array(
 	// 	'icon' => 'fa-dashboard',
 	// 	'title' => lang('menu_dashboard')
 	// ),
-	'kitchen' => array(
-		'class' => 'kitchen',
-		'icon' => 'fa-cutlery',
-		'title' => lang('menu_kitchen'),
-		'permission' => 'Admin.Menus|Admin.MenuOptions|Admin.Categories',
-		'child' => array(
-			'menus' => array('class' => 'menus', 'href' => site_url('menus'), 'title' => lang('menu_menu'), 'permission' => 'Admin.Menus'),
-			'menu_options' => array('class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'),
-			'categories' => array('class' => 'categories', 'href' => site_url('categories'), 'title' => lang('menu_category'), 'permission' => 'Admin.Categories'),
-			'sizes' => array('class' => 'sizes', 'href' => site_url('sizes'), 'title' => lang('menu_size'), 'permission' => 'Admin.Sizes'),
-		)
-	),
 	'sales' => array(
 		'class' => 'sales',
 		'icon' => 'fa-bar-chart-o',
@@ -42,6 +31,18 @@ $theme['nav_menu'] = array(
 			// 'reservations' => array('class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
 			'coupons' => array('class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
 			'drivers' => array('class' => 'drivers', 'href' => site_url('drivers'), 'title' => lang('menu_driver'), 'permission' => 'Admin.Drivers'),
+		)
+	),
+	'kitchen' => array(
+		'class' => 'kitchen',
+		'icon' => 'fa-cutlery',
+		'title' => lang('menu_kitchen'),
+		'permission' => 'Admin.Menus|Admin.MenuOptions|Admin.Categories',
+		'child' => array(
+			'menus' => array('class' => 'menus', 'href' => site_url('menus'), 'title' => lang('menu_menu'), 'permission' => 'Admin.Menus'),
+			'menu_options' => array('class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'),
+			'categories' => array('class' => 'categories', 'href' => site_url('categories'), 'title' => lang('menu_category'), 'permission' => 'Admin.Categories'),
+			'sizes' => array('class' => 'sizes', 'href' => site_url('sizes'), 'title' => lang('menu_size'), 'permission' => 'Admin.Sizes'),
 		)
 	),
 	'marketing' => array(
@@ -96,6 +97,7 @@ $theme['nav_menu'] = array(
 			'layouts' => array('class' => 'layouts', 'href' => site_url('layouts'), 'title' => lang('menu_layout'), 'permission' => 'Site.Layouts'),
 			'themes' => array('class' => 'themes', 'href' => site_url('themes'), 'title' => lang('menu_theme'), 'permission' => 'Site.Themes'),
 			// 'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
+			'image_manager' => array('class' => 'image_manager', 'href' => site_url('image_manager'), 'title' => lang('menu_media_manager'), 'permission' => 'Admin.MediaManager'),
 		)
 	),
 	'localisation' => array(
@@ -123,15 +125,15 @@ $theme['nav_menu'] = array(
 			'permissions' => array('class' => 'permissions', 'href' => site_url('permissions'), 'title' => lang('menu_permission'), 'permission' => 'Admin.Permissions'),
 //			'uri_routes' => array('class' => 'uri_routes', 'href' => site_url('uri_routes'), 'title' => lang('menu_uri_route')),
 			'error_logs' => array('class' => 'error_logs', 'href' => site_url('error_logs'), 'title' => lang('menu_error_log'), 'permission' => 'Admin.ErrorLogs'),
-			'tools' => array(
-				'class' => 'tools',
-				'title' => lang('menu_tool'),
-				'permission' => 'Admin.MediaManager|Admin.Maintenance',
-				'child' => array(
-					'image_manager' => array('class' => 'image_manager', 'href' => site_url('image_manager'), 'title' => lang('menu_media_manager'), 'permission' => 'Admin.MediaManager'),
-					'maintenance' => array('class' => 'maintenance', 'href' => site_url('maintenance'), 'title' => lang('menu_maintenance'), 'permission' => 'Admin.Maintenance'),
-				)
-			),
+			// 'tools' => array(
+			// 	'class' => 'tools',
+			// 	'title' => lang('menu_tool'),
+			// 	'permission' => 'Admin.MediaManager|Admin.Maintenance',
+			// 	'child' => array(
+			// 		'image_manager' => array('class' => 'image_manager', 'href' => site_url('image_manager'), 'title' => lang('menu_media_manager'), 'permission' => 'Admin.MediaManager'),
+			// 		'maintenance' => array('class' => 'maintenance', 'href' => site_url('maintenance'), 'title' => lang('menu_maintenance'), 'permission' => 'Admin.Maintenance'),
+			// 	)
+			// ),
 
 		)
 	),

@@ -15,6 +15,9 @@ class Dashboard extends Admin_Controller {
 	}
 
 	public function index() {
+		
+		redirect('orders');
+
 		$this->template->setTitle($this->lang->line('text_title'));
 		$this->template->setHeading($this->lang->line('text_heading'));
 

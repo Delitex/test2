@@ -22,7 +22,7 @@ $config['extension_meta'] = array(
 	'version'     => '1.0',
 	'type'        => 'payment',
 	'title'       => 'Cash On Delivery',
-	'author'      => 'SamPoyigi',
+	'author'      => 'OrderDime',
 	'description' => 'This extension will allow you to accept Cash On Delivery payment method during checkout.',
 	'settings'    => TRUE,
 );

@@ -177,10 +177,10 @@ class Statuses extends Admin_Controller {
 
 	private function validateForm() {
 		$this->form_validation->set_rules('status_name', 'lang:label_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
-		$this->form_validation->set_rules('status_for', 'lang:label_for', 'xss_clean|trim|required|alpha');
+		// $this->form_validation->set_rules('status_for', 'lang:label_for', 'xss_clean|trim|required|alpha');
         $this->form_validation->set_rules('status_color', 'lang:label_color', 'xss_clean|trim|required|max_length[7]');
         $this->form_validation->set_rules('status_comment', 'lang:label_comment', 'xss_clean|trim|max_length[1028]');
-		$this->form_validation->set_rules('notify_customer', 'lang:label_notify', 'xss_clean|trim|integer');
+		// $this->form_validation->set_rules('notify_customer', 'lang:label_notify', 'xss_clean|trim|integer');
 
 		if ($this->form_validation->run() === TRUE) {
 			return TRUE;

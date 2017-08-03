@@ -257,6 +257,5 @@
 			icon.removeClass('fa-outdent');
 			icon.addClass('fa-indent');
 		}
-		console.log(5)
 	})
 </script>

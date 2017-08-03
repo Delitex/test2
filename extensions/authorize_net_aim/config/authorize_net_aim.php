@@ -22,7 +22,7 @@ $config['extension_meta'] = array(
 	'version'     => '1.0',
 	'type'        => 'payment',
 	'title'       => 'Authorize.Net (AIM)',
-	'author'      => 'SamPoyigi',
+	'author'      => 'OrderDime',
 	'description' => 'This extension will allow you to accept credit card payments using Authorize.Net payment gateway during checkout.',
 	'settings'    => TRUE,
 );

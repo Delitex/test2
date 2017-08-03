@@ -1,6 +1,7 @@
 <?php echo get_header(); ?>
 <div class="row content">
 	<div class="col-md-12">
+	
 		<div class="panel panel-default panel-table">
 			<div class="panel-heading">
 				<h3 class="panel-title"><?php echo lang('text_list'); ?></h3>

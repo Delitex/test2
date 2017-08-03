@@ -151,6 +151,7 @@ class Orders extends Admin_Controller {
 
 		$data['statuses'] = array();
 		$statuses = $this->Statuses_model->getStatuses('order');
+		
 		foreach ($statuses as $statuses) {
 			$data['statuses'][] = array(
 				'status_id'			=> $statuses['status_id'],

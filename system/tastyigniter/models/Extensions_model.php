@@ -6,7 +6,7 @@
  * An open source online ordering, reservation and management system for restaurants.
  *
  * @package   TastyIgniter
- * @author    SamPoyigi
+ * @author    OrderDime
  * @copyright TastyIgniter
  * @link      http://tastyigniter.com
  * @license   http://opensource.org/licenses/GPL-3.0 The GNU GENERAL PUBLIC LICENSE

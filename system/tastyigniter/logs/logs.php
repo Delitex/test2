@@ -5759,3 +5759,8 @@ ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects par
 ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\test2\extensions\cart_module\libraries\Cart_module_lib.php 191
 ERROR - 2017-07-27 08:25:41 --> Severity: Warning --> array_values() expects parameter 1 to be array, null given C:\xampp\htdocs\test2\extensions\cart_module\libraries\Cart_module_lib.php 191
 ERROR - 2017-07-27 08:25:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\test2\extensions\cart_module\controllers\Cart_module.php 181
+ERROR - 2017-07-31 12:00:41 --> Severity: Parsing Error --> syntax error, unexpected '$this' (T_VARIABLE) C:\xampp\htdocs\test2\admin\controllers\Dashboard.php 20
+ERROR - 2017-07-31 12:00:50 --> 404 Page Not Found: /index
+ERROR - 2017-07-31 12:00:51 --> 404 Page Not Found: 
+ERROR - 2017-07-31 12:00:57 --> 404 Page Not Found: /index
+ERROR - 2017-08-03 06:25:32 --> Severity: Parsing Error --> syntax error, unexpected '=>' (T_DOUBLE_ARROW) C:\xampp\htdocs\test2\admin\views\themes\tastyigniter-blue\header.php 118

@@ -22,7 +22,7 @@ $config['extension_meta'] = array(
 	'version'     => '2.0',
 	'type'        => 'module',
 	'title'       => 'Cart',
-	'author'      => 'SamPoyigi',
+	'author'      => 'OrderDime',
 	'description' => 'This extension will allow you to place a cart (my order) module around your website.',
 	'settings'    => TRUE,
 );

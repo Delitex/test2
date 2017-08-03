@@ -5,7 +5,7 @@
  * An open source online ordering, reservation and management system for restaurants.
  *
  * @package   TastyIgniter
- * @author    SamPoyigi
+ * @author    OrderDime
  * @copyright TastyIgniter
  * @link      http://tastyigniter.com
  * @license   http://opensource.org/licenses/GPL-3.0 The GNU GENERAL PUBLIC LICENSE
@@ -61,7 +61,9 @@ class Statuses_model extends TI_Model {
 
 	public function getStatuses($for = FALSE) {
 		$this->db->from('statuses');
+		$this->db->where('status_priority !=', 0);
 		$this->db->order_by('status_for', 'ASC');
+		$this->db->order_by('status_priority', 'ASC');
 
 		if ( ! empty($for)) {
 			$this->db->where('status_for', $for);
@@ -79,8 +81,7 @@ class Statuses_model extends TI_Model {
 
 	public function getStatusesCustom($for = FALSE) {
 		$this->db->from('statuses');
-		$this->db->where_in('status_priority', array('1','2','3'));
-		$this->db->order_by('status_priority', 'ASC');
+		$this->db->where_in('status_id', array('11','13','19'));
 
 		if ( ! empty($for)) {
 			$this->db->where('status_for', $for);
